@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    height:2000px;
+}
+
+#page{
+    height: 2000px;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 80px 1fr 100px;
+}
+
+header{
+    background-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "logo search topNav";
+}
+
+header #logo{
+    grid-area: logo;
+
+    display: flex;
+    align-items: center;
+}
+
+header #search{
+    grid-area: search;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #topNav{
+    grid-area: topNav;
+    text-align: right;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav{
+    background-color: beige;
+    grid-area: nav;
+}
+
+main{
+    background-color: red;
+    grid-area: main;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+footer{
+    background-color: yellow;
+    grid-area: footer;
+}
+
+.vid{
+    margin:5px;
+    background-color: white;
+    height: 100px;
+}
+
+#v1{
+
+}
