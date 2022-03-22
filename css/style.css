@@ -68,10 +68,43 @@ footer{
     grid-area: footer;
 }
 
-.vid{
-    margin:5px;
+
+.ad{
+
+}
+
+#frontad{
+    margin: 2%;
+    width: 96%;
+    height: 200px;
     background-color: white;
-    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#frontad img{
+    height: 180px;
+}
+
+.vid{
+    margin: 2%;
+    background-color: white;
+    width: 21%;
+    /*height: auto;*/
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    align-self: center;
+    margin:4%;
+}
+
+.vid img{
+    height: auto;
+    width: auto;
 }
 
 #v1{
