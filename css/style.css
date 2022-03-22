@@ -4,24 +4,25 @@ body{
 }
 
 #page{
-    height: 2000px;
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "nav main"
-    "footer footer";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 80px 1fr 100px;
+  height: 2000px;
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav main"
+  "footer footer";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr 100px;
 }
 
 header {
   overflow: hidden;
   padding: 10px;
   height: 49px;
-  border-bottom: 8px solid #b50f09;
+  grid-area: header;
+  background-color: lightblue;
 }
 
-header a {
+header a.link {
   color: white;
   text-align: center;
   padding: 12px;
@@ -34,7 +35,7 @@ header a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header a:hover {
+header a.link:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   color: white;
 }
