@@ -14,39 +14,34 @@ body{
     grid-template-rows: 80px 1fr 100px;
 }
 
-header{
-    background-color: white;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 30% 1fr 30%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-    "logo search topNav";
+header {
+  overflow: hidden;
+  padding: 10px;
+  height: 49px;
+  border-bottom: 8px solid #b50f09;
 }
 
-header #logo{
-    grid-area: logo;
-
-    display: flex;
-    align-items: center;
+header a {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 8px;
+  margin-right: 10px;
+  float: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header #search{
-    grid-area: search;
-    background-color: aqua;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header a:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: white;
 }
 
-header #topNav{
-    grid-area: topNav;
-    text-align: right;
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
+header img {
+  height: 49px;
+  margin-left: 10px;
 }
 
 nav{
@@ -72,8 +67,4 @@ footer{
     margin:5px;
     background-color: white;
     height: 100px;
-}
-
-#v1{
-    
 }
