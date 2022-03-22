@@ -15,23 +15,26 @@ body{
 }
 
 header {
+  display: flex;
   overflow: hidden;
   padding: 10px;
   height: 49px;
   grid-area: header;
   background-color: lightblue;
+  justify-content: space-between;
 }
 
 header a.link {
   color: white;
+  background-color: #26CB42;
   text-align: center;
-  padding: 12px;
+  align-content: center;
+  padding: 0 8px;
+  margin: 3px 6px;
+  line-height: 43px;
   text-decoration: none;
   font-size: 18px;
-  line-height: 25px;
-  border-radius: 8px;
-  margin-right: 10px;
-  float: right;
+  border-radius: 4px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -40,9 +43,38 @@ header a.link:hover {
   color: white;
 }
 
+header #searchbar {
+  height: 33px;
+  width: fit-content;
+  margin: auto 0;
+}
+
+header #searchbar button {
+  height: inherit;
+  background-color: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+header #searchbar button:hover {
+    background-color: #ccc;
+}
+
+header #search {
+  width: 300px;
+  height: inherit;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
 header img {
   height: 49px;
-  margin-left: 10px;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 nav{
