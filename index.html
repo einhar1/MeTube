@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeTube</title>
 </head>
@@ -12,11 +13,13 @@
         <section id="page">
 
             <header>
-                <div id="logo">MeTube</div>
-
-                <div id="search">Sök</div>
-
-                <div id="topNav">Logga in</div>
+                <!-- html och css i header delvis hämtad från w3schools.com -->
+                <a href="index.html"><img id="a" src="images/Metube_logo_6.png" alt="Metube_logo_2"></a>
+                <div id="searchbar">
+                <input id="search" type="search" autocomplete="off" placeholder="Sök..">
+                <button><i class="fa fa-search"></i></button>
+                </div>
+                <a class="link" href="#login">Logga in</a>
             </header>
             
             <nav>

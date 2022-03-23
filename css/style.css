@@ -4,49 +4,78 @@ body{
 }
 
 #page{
-    height: 2000px;
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "nav main"
-    "footer footer";
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 80px 1fr 100px;
+  height: 2000px;
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav main"
+  "footer footer";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr 100px;
 }
 
-header{
-    background-color: white;
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 30% 1fr 30%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-    "logo search topNav";
+header {
+  display: flex;
+  overflow: hidden;
+  padding: 10px;
+  height: 49px;
+  grid-area: header;
+  background-color: lightblue;
+  justify-content: space-between;
 }
 
-header #logo{
-    grid-area: logo;
-
-    display: flex;
-    align-items: center;
+header a.link {
+  color: white;
+  background-color: #26CB42;
+  text-align: center;
+  align-content: center;
+  padding: 0 8px;
+  margin: 3px 6px;
+  line-height: 43px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header #search{
-    grid-area: search;
-    background-color: aqua;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header a.link:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: white;
 }
 
-header #topNav{
-    grid-area: topNav;
-    text-align: right;
+header #searchbar {
+  display: flex;
+  height: 33px;
+  width: fit-content;
+  margin: auto 0;
+}
 
-    display: flex;
-    justify-content: right;
-    align-items: center;
+header #searchbar button {
+  height: inherit;
+  background-color: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+header #searchbar button:hover {
+    background-color: #ccc;
+}
+
+header #search {
+  width: 300px;
+  height: inherit;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+header img {
+  height: 49px;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 nav{
@@ -112,8 +141,4 @@ h2{
 .vid img{
     height: auto;
     width: auto;
-}
-
-#v1{
-    
 }
