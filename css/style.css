@@ -97,9 +97,16 @@ footer{
     flex-direction: column;
 }
 
+.meta{
+    align-content: center;
+    margin:3%;
+    font-size: small;
+}
+
 h2{
     align-self: center;
-    margin:4%;
+    margin:0;
+    font-size: x-large;
 }
 
 .vid img{
