@@ -44,6 +44,7 @@ header a.link:hover {
 }
 
 header #searchbar {
+  display: flex;
   height: 33px;
   width: fit-content;
   margin: auto 0;
