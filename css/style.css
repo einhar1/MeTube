@@ -5,6 +5,7 @@ body{
 
 #page{
   height: 2000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: grid;
   grid-template-areas: 
   "header header"
@@ -35,7 +36,6 @@ header a.link {
   text-decoration: none;
   font-size: 18px;
   border-radius: 4px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header a.link:hover {
@@ -69,7 +69,6 @@ header #search {
   padding-left: 5px;
   padding-right: 5px;
   border: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 header img {
@@ -136,4 +135,14 @@ h2{
 .vid img{
     height: auto;
     width: auto;
+}
+
+#videoheader {
+  display: flex;
+  width: 650px;
+}
+
+#title {
+  margin-left: 20px;
+  margin-right: 10px;
 }
