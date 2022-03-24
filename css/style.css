@@ -50,7 +50,7 @@ header #searchbar {
   margin: auto 0;
 }
 
-header #searchbar button {
+header #knapp {
   height: inherit;
   background-color: #ddd;
   font-size: 16px;
@@ -58,7 +58,7 @@ header #searchbar button {
   cursor: pointer;
 }
 
-header #searchbar button:hover {
+header #knapp:hover {
     background-color: #ccc;
 }
 
@@ -95,11 +95,6 @@ main{
 footer{
     background-color: yellow;
     grid-area: footer;
-}
-
-
-.ad{
-
 }
 
 #frontad{
