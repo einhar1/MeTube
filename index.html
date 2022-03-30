@@ -5,44 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeTube</title>
+    <script src="script.js"></script>
 </head>
     <body>
         <section id="page">
 
             <header>
-                <div id="logo">MeTube</div>
-
-                <div id="search">Sök</div>
-
-                <div id="topNav">Logga in</div>
+                <!-- html och css i header delvis hämtad från w3schools.com -->
+                <a href="index.html"><img src="images/Metube_logo_6.png" alt="Metube_logo_2"></a>
+                <form id="searchbar" action="javascript:myFunction()">
+                    <input id="search" type="search" autocomplete="off" placeholder="Sök..">
+                    <button id="knapp" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <a class="link" href="#login">Logga in</a>
             </header>
 
             <nav>
               <ul id="meny">
-<li><a href="sida2.php">🎞️Prenumerationer</a></li>
-<li><a href="sida3.php">🔥Trendar</a></li>
-<li><a href="sida4.php">📚Bibliotek</a></li>
-<li><a href="sida5.php">🔄Historik</a></li>
-<br>
-<br>
-<li><a href="sida5.php">Musik</a></li>
-<li><a href="sida5.php">Komedi</a></li>
+                <li><a href="sida2.php">🎞️Prenumerationer</a></li>
+                <li><a href="sida3.php">🔥Trendar</a></li>
+                <li><a href="sida4.php">📚Bibliotek</a></li>
+                <li><a href="sida5.php">🔄Historik</a></li>
+                <br>
+                <br>
+                <li><a href="sida5.php">Musik</a></li>
+                <li><a href="sida5.php">Komedi</a></li>
 
 
 
-</ul>
+              </ul>
             </nav>
 
             <main>
-                <section class="vid" id="v1"><video src=""></video> sus</section>
-                <section class="vid" id="v2"><video src=""></video> sus</section>
-                <section class="vid" id="v3"><video src=""></video> sus</section>
-                <section class="vid" id="v4"><video src=""></video> sus</section>
-                <section class="vid" id="v5"><video src=""></video> sus</section>
-                <section class="vid" id="v6"><video src=""></video> sus</section>
+                <section class="ad" id="frontad"><img src="images/parallax-mountain.png" alt="reklambild">Wow köp berg!!!!!!!</section>
 
+                <section class="vid" id="v1"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v2"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v3"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v4"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v5"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v6"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v7"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
+                <section class="vid" id="v8"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Videotitel</h2> 2 visningar</section></section>
             </main>
 
             <footer>
