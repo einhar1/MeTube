@@ -78,63 +78,73 @@ header img {
 }
 
 nav{
-    background-color: beige;
-    grid-area: nav;
+  background-color: beige;
+  grid-area: nav;
 }
 
 main{
-    background-color: red;
-    grid-area: main;
+  background-color: white;
+  grid-area: main;
+  font-size: small;
 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 footer{
-    background-color: yellow;
-    grid-area: footer;
+  background-color: yellow;
+  grid-area: footer;
 }
 
 #frontad{
-    margin: 2%;
-    width: 96%;
-    height: 200px;
-    background-color: white;
+  margin: 2%;
+  width: 96%;
+  height: auto;
+  background-color: white;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #frontad img{
-    height: 180px;
+  width: auto;
+  height: auto;
 }
 
 .vid{
-    margin: 2%;
-    background-color: white;
-    width: 21%;
-    /*height: auto;*/
+  margin: 2%;
+  background-color: white;
+  width: 21%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.vid:hover{
+  background-color: #e7e7e7;
+}
+
+.vid a{
+  text-decoration: none;
+  color: black;
 }
 
 .meta{
-    align-content: center;
-    margin:3%;
-    font-size: small;
+  align-content: center;
+  margin:3%;
 }
 
 h2{
-    align-self: center;
-    margin:0;
-    font-size: x-large;
+  align-self: center;
+  margin:0;
+  font-size: large;
 }
 
 .vid img{
-    height: auto;
-    width: auto;
+  height: auto;
+  width: 96%;
+  margin: 2%;
 }
 
 #videoheader {
