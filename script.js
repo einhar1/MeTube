@@ -1,13 +1,23 @@
-const videor = ["video1", "video2", "video3", "video4"];
+var request;
 
-function checkVideo(video) {
-    return video == document.getElementById("search").value;
-}
+$(document).ready(function () {
+    $(document).on('submit', '#searchbar', function () {
+        
+        if (window.XMLHttpRequest) {
+            request = new XMLHttpRequest();
+        } else {
+            request = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        request.open('GET', document.getElementById("search").value + ".html", false);
+        request.send();
 
-function myFunction() {
-    if (videor.find(checkVideo) == undefined) {
-        window.alert("Inga sökresultat");
-    } else {
-        window.location.href = videor.find(checkVideo) + ".html";
-    }
-}
+        if (request.status === 404) {
+            alert("Inga sökresultat");
+        } else {
+            window.location.href = document.getElementById("search").value + ".html";
+        }
+
+        return false;
+    });
+    
+});
