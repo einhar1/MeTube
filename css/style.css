@@ -1,26 +1,24 @@
 body{
-    margin:0;
-    height:2000px;
+  margin:0;
+  height: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #page{
+  position: absolute;
+  top: 69px;
+  left: 232px;
   height: 2000px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: grid;
-  grid-template-areas: 
-  "header header"
-  "nav main"
-  "footer footer";
-  grid-template-columns: auto;
-  grid-template-rows: auto 1fr 100px;
+  z-index: -1;
 }
 
 header {
+  position: fixed;
   display: flex;
   overflow: hidden;
   padding: 10px;
   height: 49px;
-  grid-area: header;
+  width: calc(100% - 17px);
   background-color: lightblue;
   justify-content: space-between;
 }
@@ -78,15 +76,17 @@ header img {
 }
 
 nav{
+  position: fixed;
+  top: 69px;
   background-color: rgb(104,104,104);
   grid-area: nav;
+  height: 100vh;
 }
 
 main{
   background-color: white;
-  grid-area: main;
   font-size: small;
-
+  height: 1900px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -94,7 +94,7 @@ main{
 
 footer{
   background-color: yellow;
-  grid-area: footer;
+  height: 100px;
 }
 
 #frontad{
@@ -113,9 +113,9 @@ footer{
 }
 
 .vid{
-  margin: 2%;
+  margin: 1%;
   background-color: white;
-  width: 21%;
+  width: 23%;
 
   display: flex;
   flex-direction: column;
