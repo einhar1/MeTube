@@ -7,7 +7,7 @@ body{
 #page{
   position: absolute;
   top: 69px;
-  left: 232px;
+  left: 223.75px;
   height: 2000px;
   z-index: -1;
 }
@@ -81,7 +81,6 @@ nav{
   background-color: rgb(104,104,104);
   grid-area: nav;
   height: calc(100vh - 69px);
-  max-width: 30%;
   overflow: auto;
 }
 
