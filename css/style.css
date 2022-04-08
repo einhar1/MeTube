@@ -8,7 +8,8 @@ body{
   position: absolute;
   top: 69px;
   left: 223.75px;
-  height: 2000px;
+  height: fit-content;
+  width: calc(100% - 223.75px);
   z-index: -1;
 }
 
@@ -95,7 +96,12 @@ main{
 
 footer{
   background-color: yellow;
-  height: 100px;
+  height: fit-content;
+  padding: 5px;
+}
+
+#footer1 {
+  line-height: 24px;
 }
 
 #frontad{
