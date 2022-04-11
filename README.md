@@ -8,5 +8,4 @@ Här är en prototyp på hur hemsidan antagnigen kommer att se ut. 😃
 
 Här är hur hemsidan ser ut just nu.
 
-<img width="947" alt="Skärmbild 2022-03-30 181642" src="https://user-images.githubusercontent.com/77612217/160882640-bcd46294-42c4-41f9-993f-f900a1b80d52.png">
-
+![Skärmbild 2022-03-30 181642](https://user-images.githubusercontent.com/77612217/160882640-bcd46294-42c4-41f9-993f-f900a1b80d52.png)
