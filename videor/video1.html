@@ -29,7 +29,7 @@
     
                 <button type="submit">Logga in</button>
                 <label>
-                    <input type="checkbox" checked="checked" name="remember"> Kom ihåg mig
+                    <input type="checkbox" name="remember"> Kom ihåg mig
                 </label>
             </div>
     
@@ -45,9 +45,9 @@
         <a href="../index.html"><img src="../res/img/Metube_logo_6.png" alt="Metube_logo_2"></a>
         <form id="searchbar">
             <input id="search" type="search" autocomplete="off" placeholder="Sök.." required>
-            <button id="knapp" type="submit"><i class="fa fa-search"></i></button>
+            <button id="searchbutton" aria-label="sök" type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <a class="link" id="link">Logga in</a>
+        <button id="loggaIn" class="loggaIn">Logga in</button>
     </header>
     
     <nav>
@@ -55,8 +55,7 @@
             <li><a href="#prenumerationer">🎞️Prenumerationer</a></li>
             <li><a href="#trender">🔥Trendar</a></li>
             <li><a href="#bilbliotek">📚Bibliotek</a></li>
-            <li><a href="#historik">🔄Historik</a></li>
-            <br>
+            <li id="extraMargin"><a href="#historik">🔄Historik</a></li>
             <li><a href="#musik">Musik</a></li>
             <li><a href="#komedi">Komedi</a></li>
             <li><a href="#gaming">Gaming</a></li>

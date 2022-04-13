@@ -1,10 +1,8 @@
-// JavaScript-filen består till stor del kod som i grunden är 
-// hämtad från bland annat w3schools.com och stackoverflow.com.
-
 var request;
 
 $(document).ready(function () {
 
+    // Följande kod är i grunden hämtad från stackoverflow.com.
     $(document).on('submit', '#searchbar', function () {
         
         if (window.XMLHttpRequest) {
@@ -23,23 +21,25 @@ $(document).ready(function () {
 
         return false;
     });
-
-    var targetObj = {};
-    var targetProxy = new Proxy(targetObj, {
-        set: function (target, key, value) {
-            if (params.uname != null) {
-                document.getElementById('link').innerHTML = params.uname;
-            }
-            target[key] = value;
-            return true;
-        }
-    });
-
+    
+    // Följande kod är i grunden hämtad från stackoverflow.com.
     const params = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
     });
-    
-    targetProxy.uname = params.uname;
+
+    if (params.uname != null) {
+        if (params.remember === 'on') {
+            localStorage.setItem('uname', params.uname);
+            document.getElementById('loggaIn').innerHTML = localStorage.getItem('uname');
+        } else {
+            sessionStorage.setItem('uname', params.uname);
+            document.getElementById('loggaIn').innerHTML = sessionStorage.getItem('uname');
+        }
+    } else if (sessionStorage.getItem('uname') != null) {
+        document.getElementById('loggaIn').innerHTML = sessionStorage.getItem('uname');
+    } else if (localStorage.getItem('uname') != null) {
+        document.getElementById('loggaIn').innerHTML = localStorage.getItem('uname');
+    }
 
     window.onclick = function (event) {
         if (event.target == document.getElementById('modal')) {
@@ -61,7 +61,7 @@ $(document).ready(function () {
         document.getElementById("login").reset();
     }
 
-    document.getElementById('link').onclick = function (event) {
+    document.getElementById('loggaIn').onclick = function (event) {
         document.getElementById('modal').style.display = 'block';
         document.getElementById('body').style.overflow = 'hidden';
     }
