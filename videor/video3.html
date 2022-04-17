@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kolla på roliga och inspirerande videor på den bästa 
+        videodelningssajten någonsin. Skapa ett konto på MeTube idag!">
+    <title>MeTube</title>
+</head>
+
+<body id="body">
+
+    <!--html, css och javascript i .modal delvis hämtat från w3schools.com-->
+    <div id="modal" class="modal">
+    
+        <form class="modal-content animate" id="login">
+            <div class="container">
+                <span id="close" class="close" title="Stäng">&times;</span>
+    
+                <label for="uname"><b>Användarnamn</b></label>
+                <input id="uname" type="text" placeholder="Ange Användarnamn" name="uname" required>
+    
+                <label for="psw"><b>Lösenord</b></label>
+                <input id="psw" type="password" placeholder="Ange Lösenord" name="psw" required>
+    
+                <button type="submit">Logga in</button>
+                <label>
+                    <input type="checkbox" name="remember"> Kom ihåg mig
+                </label>
+            </div>
+    
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" id="cancelbtn" class="cancelbtn">Avbryt</button>
+                <span class="psw"><a href="http://www.bit.ly/dinmammaxd" target="blank">Glömt lösenord?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <header>
+        <!-- html och css i header delvis hämtat från w3schools.com -->
+        <a href="../index.html"><img src="../res/img/Metube_logo_6.png" alt="Metube_logo_2"></a>
+        <form id="searchbar">
+            <input id="search" type="search" autocomplete="off" placeholder="Sök.." required>
+            <button id="searchbutton" aria-label="sök" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <button id="loggaIn" class="loggaIn">Logga in</button>
+    </header>
+    
+    <nav>
+        <ul id="meny">
+            <li><a href="#prenumerationer">🎞️Prenumerationer</a></li>
+            <li><a href="#trender">🔥Trendar</a></li>
+            <li><a href="#bilbliotek">📚Bibliotek</a></li>
+            <li id="extraMargin"><a href="#historik">🔄Historik</a></li>
+            <li><a href="#musik">Musik</a></li>
+            <li><a href="#komedi">Komedi</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+        </ul>
+    </nav>
+
+    <section id="page">
+
+        <main>
+            <h1>video3 placeholder</h1>
+        </main>
+
+        <footer>
+            MeTube är ett skolprojekt av Oscar, Einar och Viktor.
+            <address>
+                <span id="footer1">Kontakta oss: <a href="mailto:metube@dinmamma.com">metube@dinmamma.com</a>.<br>
+                    Besöksadress:</span><br>
+                Elitvägen 69<br>
+                666 69, Coolsville<br>
+                Pakistan
+            </address>
+        </footer>
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
