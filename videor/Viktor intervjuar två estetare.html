@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,23 +17,23 @@
 
     <!--html, css och javascript i .modal delvis hämtat från w3schools.com-->
     <div id="modal" class="modal">
-    
+
         <form class="modal-content animate" id="login">
             <div class="container">
                 <span id="close" class="close" title="Stäng">&times;</span>
-    
+
                 <label for="uname"><b>Användarnamn</b></label>
                 <input id="uname" type="text" placeholder="Ange Användarnamn" name="uname" required>
-    
+
                 <label for="psw"><b>Lösenord</b></label>
                 <input id="psw" type="password" placeholder="Ange Lösenord" name="psw" required>
-    
+
                 <button type="submit">Logga in</button>
                 <label>
                     <input type="checkbox" name="remember"> Kom ihåg mig
                 </label>
             </div>
-    
+
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" id="cancelbtn" class="cancelbtn">Logga ut</button>
                 <span class="psw"><a href="http://www.bit.ly/dinmammaxd" target="blank">Glömt lösenord?</a></span>
@@ -49,7 +50,7 @@
         </form>
         <button id="loggaIn" class="loggaIn">Logga in</button>
     </header>
-    
+
     <nav>
         <ul id="meny">
             <li><a href="#prenumerationer">🎞️Prenumerationer</a></li>
@@ -64,8 +65,15 @@
 
     <section id="page">
 
-        <main>
-            <h1>video4 placeholder</h1>
+        <main style="display: block;">
+            <div id="videoheader">
+                <h1 id="title">Viktor intervjuar två estetare</h1>
+                <h5>Av Viktor, Leo och Isaac</h5>
+            </div>
+            <video width="650" controls>
+                <source src="../res/vid/intervju.mp4" type="video/mp4">
+                Your browser does not support html video.
+            </video>
         </main>
 
         <footer>
