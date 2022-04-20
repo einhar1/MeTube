@@ -59,6 +59,9 @@ $(document).ready(function () {
         document.getElementById('modal').style.display = 'none';
         document.getElementById('body').style.overflow = 'auto';
         document.getElementById("login").reset();
+        document.getElementById('loggaIn').innerHTML = "Logga in";
+        localStorage.clear();
+        sessionStorage.clear();
     }
 
     document.getElementById('loggaIn').onclick = function (event) {
