@@ -106,16 +106,34 @@ footer{
   line-height: 24px;
 }
 
+#mainTitel{
+  margin: 5px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: large;
+}
+
 #frontad{
   margin: 5px;
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
+#frontad a{
+  position: relative;
+  text-align: center;
+}
+
 #frontad a img{
   width: 100%;
   height: auto;
   display: block;
+}
+
+#adDisclaimer{
+  position:absolute;
+  bottom: -17px;
+  background-color: yellow;
 }
 
 .vid{
@@ -325,6 +343,9 @@ span.psw {
   main{
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #mainTitel{
+    grid-column-end: 4;
+  }
   #frontad{
     grid-column-end: 4;
   }
@@ -334,6 +355,9 @@ span.psw {
   main{
     grid-template-columns: 1fr 1fr;
   }
+  #mainTitel{
+    grid-column-end: 3;
+  }
   #frontad{
     grid-column-end: 3;
   }
@@ -342,6 +366,9 @@ span.psw {
 @media screen and (max-width: 600px) {
   main{
     grid-template-columns: 1fr;
+  }
+  #mainTitel{
+    grid-column-end: 2;
   }
   #frontad{
     grid-column-end: 2;
