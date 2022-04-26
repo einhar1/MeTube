@@ -18,7 +18,10 @@
                 <input id="search" type="search" autocomplete="off" placeholder="Sök..">
                 <button id="knapp" type="submit"><i class="fa fa-search"></i></button>
             </form>
+            <div id="buttons">
+            <button id="mode" type="button">Dark/light mode</button>
             <a class="link" href="#loggain">Logga in</a>
+           </div>
         </header>
 
         <nav>
@@ -55,14 +58,71 @@
                 <section class="vid" id="v14"><a href="video14.html"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Video 14</h2> x visningar</section></a></section>
                 <section class="vid" id="v15"><a href="video15.html"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Video 15</h2> x visningar</section></a></section>
                 <section class="vid" id="v16"><a href="video16.html"><img src="images/parallax-mountain.png" alt="video"> <section class="meta"><h2>Video 16</h2> x visningar</section></a></section>
+
             </main>
 
             <footer>
-                footer
+                Kontakta oss: 070-677 01 85
             </footer>
 
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="script.js"></script>
+
+        <script type="text/javascript">
+
+var i = 1;
+
+        $( "#mode" ).click(function() {
+
+          if(i==1){
+console.log("dark");
+
+          $("main").css('background-color', 'grey');
+          $("header").css('background-color', '#666666');
+          $("nav").css('background-color', 'grey');
+          $("footer").css('background-color', 'grey');
+          $("vids").css('background-color', 'grey');
+          $("meny").css('background-color', '#666666');
+          $("vid").css('background-color', 'grey');
+          $("Prenumerationer").css('background-color', 'grey');
+          $("trender").css('background-color', 'white');
+          $("Bibliotek").css('background-color', 'white');
+          $("historik").css('background-color', 'white');
+          $("musik").css('background-color', 'white');
+          $("Komedi").css('background-color', 'white');
+          $("v1").css('background-color', 'white');
+
+          i=2;
+        }else if(i==2){
+
+console.log("light");
+            //light mode
+
+            $("main").css('background-color', 'white');
+            $("header").css('background-color', 'white');
+            $("nav").css('background-color', 'white');
+            $("footer").css('background-color', 'white');
+            $("vids").css('background-color', 'white');
+            $("meny").css('background-color', 'white');
+            $("Prenumerationer").css('background-color', 'grey');
+            $("trender").css('background-color', 'grey');
+            $("Bibliotek").css('background-color', 'grey');
+            $("historik").css('background-color', 'grey');
+            $("musik").css('background-color', 'grey');
+            $("Komedi").css('background-color', 'grey');
+            $("v1").css('background-color', 'grey');
+
+
+            i=1;
+
+        }
+
+
+
+        });
+        </script>
+
+
     </body>
 </html>
