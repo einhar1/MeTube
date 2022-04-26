@@ -139,6 +139,29 @@ footer{
   opacity: 75%;
 }
 
+#adDisclaimerVideo{
+  position:absolute;
+  bottom: calc(100% - 30px);
+  left: 1%;
+  padding: 1.5px;
+  background-color: yellow;
+  opacity: 75%;
+  z-index: 1;
+}
+
+#adDisclaimerVideo a{
+  text-decoration: none;
+}
+
+#videoholder{
+  position: relative;
+}
+
+video{
+  position:relative;
+  z-index: 0;
+}
+
 .vid{
   display: flex;
   flex-direction: column;
